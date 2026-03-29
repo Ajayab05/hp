@@ -38,7 +38,7 @@ jobs:
       # 5. Build & Push Docker Images
       - name: Build & Push Images
         run: |
-          services=("order-service" "payment-service" "ui-service")
+          services=("order-service" "payment-service" "uiservices")
 
           for service in "${services[@]}"; do
             echo "Building $service..."
